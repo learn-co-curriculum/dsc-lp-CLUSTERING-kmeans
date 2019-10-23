@@ -106,5 +106,7 @@ Appendix:
 	* Elbow Method
 	* Silhoutte Criteria
 * Applied Examples
-	* Wine Reviews
+	* Wine Properties
+		* 
 	* Online Retail
+		* This final example poses some interesting problems for clustering the purchase data; invoice number and customer id are numbers, but strictly identifiers not numerical quantities. As such, any distance calculation based on these fields will be erroneous; customer 12345 and 12346 are not necessarily any more similar than customer 12345 and customer 97531. It may be appropriate to create dummy variables for other categorical fields such as country, but doing so will also create a sparse feature space with many dummy dimensions associated for a single categorical variable which also leads to feature weight imbalances for the KMeans algorithm.
